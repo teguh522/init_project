@@ -1,0 +1,19 @@
+{
+  "name": "bridging_keu",
+  "version": "1.0.0",
+  "description": "Sistem Bridging Keuangan Entitas",
+  "main": "app.js",
+  "author": "Teguh Firmansyah",
+  "scripts": {
+    "dev":"nodemon app.js"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
