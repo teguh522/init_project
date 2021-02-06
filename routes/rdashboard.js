@@ -1,9 +1,6 @@
 const route = require('express').Router()
 
-
-route.route('/').get((req, res, next) => {
-    res.json("Hallo")
+route.route('/').get((req, res) => {
+    res.json("Berhasil")
 })
-
-
 module.exports = route

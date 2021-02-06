@@ -1,1 +1,2 @@
-module.exports.getentitas = require('./rentitas')
+module.exports.getauth = require('./rauth')
+module.exports.getdashboard = require('./rdashboard')

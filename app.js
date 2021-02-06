@@ -4,11 +4,13 @@ const express = require('express')
 
 const handle = require('./handler/errorreport')
 const route = require('./routes')
+const middleware = require('./middleware/cektoken')
 const app = express()
 app.use(express.json())
 app.use(urlencoded({ extended: true }))
 
-app.use('/entitas', route.getentitas)
+app.use('/auth', route.getauth)
+app.use('/home', middleware.cektoken, route.getdashboard)
 
 app.use((req, res, next) => {
     let err = new Error('Tidak ditemukan')
